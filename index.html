@@ -1,36 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porsche Taycan</title>
-   
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    
+
     <!-- Navbar -->
     <header>
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <a href="#">    
-                        <span> Porsche </span>
+                    <a href="#">
+                        <span> <h1>Porsche</h1> </span>
                     </a>
                 </div>
 
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <!-- Navbar End -->
 
-    <main></main>
-    <footer></footer>
+    <!--     <main>    -->
+    <main>
+        <div class="container">
+            <div class="main-wrapper">
+                <div class="main-info">
+                    <h1>Turn Every Road Into Your Race Track</h1>
+                    <p>Engineering excellence meets iconic performance. Discover a driving experience crafted without
+                        compromise, tailored precisely to your standard.</p>
+                    <span><a href="#products">DISCOVER</a></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="products-grid">
+                <!-- 1 -->
+                <div class="products-grid-item">
+                    <div class="products-grid-img">
+                        <img src="img/Porsche 911 GT3 RS.jpg" alt="Porsche 911 GT3 RS">
+                    </div>
+                    <div class="products-item-info">
+                        <h3>Porsche 911 GT3 RS</h3>
+                        <p>Price 99999$</p>
+                        <a href="#" class="products-btn">Buy now</a>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="products-grid-item">
+                    <div class="products-grid-img">
+                        <img src="img/Porsche Taycan Turbo S..jpg" alt="Porsche Taycan Turbo S">
+                    </div>
+                    <div class="products-item-info">
+                        <h3>Porsche Taycan Turbo S</h3>
+                        <p>Price 99999$</p>
+                        <a href="#" class="products-btn">Buy now</a>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="products-grid-item">
+                    <div class="products-grid-img">
+                        <img src="img/Porsche 718 Cayman GT4 RS..jpg" alt="Porsche 718 Cayman GT4 RS">
+                    </div>
+                    <div class="products-item-info">
+                        <h3>Porsche 718 Cayman GT4 RS</h3>
+                        <p>Price 99999$</p>
+                        <a href="#" class="products-btn">Buy now</a>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="products-grid-item">
+                    <div class="products-grid-img">
+                        <img src="img/Porsche Panamera GTS..jpg" alt="Porsche Panamera GTS">
+                    </div>
+                    <div class="products-item-info">
+                        <h3>Porsche Panamera GTS</h3>
+                        <p>Price 99999$</p>
+                        <a href="#" class="products-btn">Buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section class="specs-banner">
+        <div class="container">
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <h2>2.8s</h2>
+                    <p>0–100 km/h Acceleration</p>
+                </div>
+                <div class="spec-item">
+                    <h2>1,019 HP</h2>
+                    <p>Peak Electric Power Output</p>
+                </div>
+                <div class="spec-item">
+                    <h2>800V</h2>
+                    <p>Ultra-Fast Charging Tech</p>
+                </div>
+                <div class="spec-item">
+                    <h2>100%</h2>
+                    <p>Pure Porsche DNA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">Porsche</a>
+                    <p>Shaping the future of the sports car with engineering excellence, iconic design, and electric
+                        performance.</p>
+                </div>
+
+                <!-- Links Column 1 -->
+                <div class="footer-links">
+                    <h4>Models</h4>
+                    <ul>
+                        <li><a href="#">911 GT3 RS</a></li>
+                        <li><a href="#">Taycan Turbo S</a></li>
+                        <li><a href="#">718 Cayman GT4 RS</a></li>
+                        <li><a href="#">Panamera GTS</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links Column 2 -->
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Motorsport</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Release</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-newsletter">
+                    <h4>Stay Informed</h4>
+                    <p>Subscribe to receive exclusive Porsche updates and releases.</p>
+                    <form class="newsletter-form" action="#">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Porsche Cars North America, Inc. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="YouTube">YT</a>
+                    <a href="#" aria-label="X/Twitter">X</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
