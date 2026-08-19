@@ -1,3 +1,133 @@
-* {
-    max-width: 1170px;
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+  --black: #000;
+  --white: #faf7f8;
+  --skyblue: #a5e2e1;
+  --skyblue-glow: rgba(165, 226, 225, 0.12);
+  --skyblue-shadow: rgba(165, 226, 225, 0.35);
+  
+ 
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif ;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* NavBar Styling */
+header {
+  background-color: var(--black);
+  height: 70px;
+  width: 100%;
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+    .logo {
+      a {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 1.35rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: var(--white);
+        text-decoration: none;
+        padding: 4px 6px;
+        border-radius: 4px;
+        transition: color 0.3s ease;
+
+        /* Animated bottom underline */
+        &::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: var(--skyblue);
+          box-shadow: 0 0 8px var(--skyblue);
+          transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        &:hover {
+          color: var(--skyblue);
+
+          &::after {
+            width: 100%;
+          }
+        }
+
+        &:focus-visible {
+          outline: 2px solid var(--skyblue);
+          outline-offset: 4px;
+        }
+      }
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--white);
+        font-weight: 500;
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        transition: color 0.3s ease, 
+                    background-color 0.3s ease, 
+                    box-shadow 0.3s ease, 
+                    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+        &:hover {
+          color: var(--skyblue);
+          background: var(--skyblue-glow); 
+          box-shadow: 0 0 12px var(--skyblue-shadow);
+          transform: translateY(-2px);
+        }
+
+        &:focus-visible {
+          outline: 2px solid var(--skyblue);
+          outline-offset: 2px;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive Media Query  */
+@media (max-width: 768px) {
+  header {
+    .nav-wrapper {
+      .menu {
+        gap: 0.5rem;
+
+        a {
+          padding: 0.4rem 0.75rem;
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}
+/* Nav Bar CSS End */
